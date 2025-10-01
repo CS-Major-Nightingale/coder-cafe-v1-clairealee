@@ -30,13 +30,22 @@ public class CoderCafe {
 
         System.out.println("*************************************");
         System.out.println("*\tWelcome to Claire's Coder Cafe!\t*");
-        System.out.println("*\t\t" + myDate + " " + formattedTime + "\t\t\t*");
-        System.out.println("*\t" + icedMatchaLatteItems + " x " + "Iced Matcha Latte\t\t\t*");
-        System.out.println("*\t" + icedLatteItems + " x " + "Iced Latte\t\t\t\t\t*");
-        System.out.println("*\t" + cappuccinoItems + " x " + "Cappuccino\t\t\t\t\t*");
-        System.out.println("*\t" + hotChocolateItems + " x " + "Hot Chocolate\t\t\t\t*");
+        System.out.println("*\t\t\t" + myDate + " " + formattedTime + "\t\t*");
+
+        System.out.print("*\t" + icedMatchaLatteItems + " x " + "Iced Matcha Latte\t $");
+        System.out.printf("%.2f\t*\n",icedMatchaLatte*icedMatchaLatteItems);
+
+        System.out.print("*\t" + icedLatteItems + " x " + "Iced Latte\t\t\t $");
+        System.out.printf("%.2f\t*\n",icedLatte*icedLatteItems);
+
+        System.out.print("*\t" + cappuccinoItems + " x " + "Cappuccino\t\t\t $");
+        System.out.printf("%.2f\t*\n",cappuccino*cappuccinoItems);
+
+        System.out.print("*\t" + hotChocolateItems + " x " + "Hot Chocolate\t\t $");
+        System.out.printf("%.2f\t*\n",hotChocolate*hotChocolateItems);
+
         System.out.println("*\t\t\t\t\t\t\t\t\t*");
-        System.out.printf("*\t Subtotal:%.2f\t\t\t\t\t*\n", subTotal);
+        System.out.printf("*\tSubtotal: $%.2f\t\t\t\t*\n", subTotal);
         System.out.printf("*\tSalesTax: $%.2f\t\t\t\t\t*\n", tax);
         System.out.printf("*\tService Fee: $%.2f\t\t\t\t*\n", serviceFee);
         System.out.printf("*\tCoder cafe Fee: $%.2f\t\t\t*\n", cafeFee);
