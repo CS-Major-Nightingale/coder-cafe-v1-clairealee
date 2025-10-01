@@ -36,22 +36,12 @@ public class CoderCafe {
         System.out.println("*\t" + cappuccinoItems + " x " + "Cappuccino\t\t\t\t\t*");
         System.out.println("*\t" + hotChocolateItems + " x " + "Hot Chocolate\t\t\t\t*");
         System.out.println("*\t\t\t\t\t\t\t\t\t*");
-        System.out.print("*\tSubtotal: $");
-        System.out.printf("%.2f", subTotal);
-        System.out.println("\t\t\t\t*");
-        System.out.print("*\tSales Tax: $");
-        System.out.printf("%.2f", tax);
-        System.out.println("\t\t\t\t*");
-        System.out.print("*\tService Fee: $");
-        System.out.printf("%.2f", serviceFee);
-        System.out.println("\t\t\t\t*");
-        System.out.print("*\tCoder cafe Fee: $");
-        System.out.printf("%.2f", cafeFee);
-        System.out.println("\t\t\t*");
+        System.out.printf("*\t Subtotal:%.2f\t\t\t\t\t*\n", subTotal);
+        System.out.printf("*\tSalesTax: $%.2f\t\t\t\t\t*\n", tax);
+        System.out.printf("*\tService Fee: $%.2f\t\t\t\t*\n", serviceFee);
+        System.out.printf("*\tCoder cafe Fee: $%.2f\t\t\t*\n", cafeFee);
         System.out.println("*\t\t\t\t\t\t\t\t\t*");
-        System.out.print("*\tTotal: $");
-        System.out.printf("%.2f", total);
-        System.out.println("\t\t\t\t\t*");
+        System.out.printf("*\tTotal: $%.2f\t\t\t\t\t*\n", total);
         System.out.println("*\t\tThank you, come again!\t\t*");
         System.out.println("*************************************");
 
