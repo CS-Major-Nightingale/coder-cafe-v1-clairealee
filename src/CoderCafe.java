@@ -25,22 +25,20 @@ public class CoderCafe {
         //objects for time
         LocalDate myDate = LocalDate.now();
         LocalTime myTime = LocalTime.now();
-        DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm");
+        DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm::ss");
         String formattedTime = myTime.format(myFormatter);
 
         System.out.println("*****************************************");
         System.out.println("*\tWelcome to Claire's Coder Cafe!\t\t*");
-        System.out.println("*\t\t\t" + myDate + " " + formattedTime + "\t\t\t*");
+        System.out.println("*\t\t " + myDate + " " + formattedTime + " \t\t\t*");
+        System.out.println("*\t\t\t\t\t\t\t\t\t\t*");
 
         System.out.print("*\t" + icedMatchaLatteItems + " x " + "Iced Matcha Latte\t $");
         System.out.printf("%.2f\t\t*\n",icedMatchaLatte*icedMatchaLatteItems);
-
         System.out.print("*\t" + icedLatteItems + " x " + "Iced Latte\t\t\t $");
         System.out.printf("%.2f\t\t*\n",icedLatte*icedLatteItems);
-
         System.out.print("*\t" + cappuccinoItems + " x " + "Cappuccino\t\t\t $");
         System.out.printf("%.2f\t\t*\n",cappuccino*cappuccinoItems);
-
         System.out.print("*\t" + hotChocolateItems + " x " + "Hot Chocolate\t\t $");
         System.out.printf("%.2f\t\t*\n",hotChocolate*hotChocolateItems);
 
