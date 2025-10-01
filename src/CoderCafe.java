@@ -28,27 +28,32 @@ public class CoderCafe {
         DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm");
         String formattedTime = myTime.format(myFormatter);
 
-        System.out.println("**********************************");
-        System.out.println(" Welcome to Claire's Coder Cafe!");
-        System.out.println("\t\t" + myDate + " " + formattedTime);
-        System.out.println("\t" + icedMatchaLatteItems + " x " + "Iced Matcha Latte");
-        System.out.println("\t" + icedLatteItems + " x " + "Iced Latte");
-        System.out.println("\t" + cappuccinoItems + " x " + "Cappuccino");
-        System.out.println("\t" + hotChocolateItems + " x " + "Hot Chocolate");
-        System.out.println();
-        System.out.print("\tSubtotal: $");
-        System.out.printf("%.2f%n", subTotal);
-        System.out.print("\tSales Tax: $");
-        System.out.printf("%.2f%n", tax);
-        System.out.print("\tService Fee: $");
-        System.out.printf("%.2f%n", serviceFee);
-        System.out.print("\tCoder cafe Fee: $");
-        System.out.printf("%.2f%n", cafeFee);
-        System.out.println();
-        System.out.print("\tTotal: $");
-        System.out.printf("%.2f%n", total);
-        System.out.println("\t\tThank you, come again!");
-        System.out.println("**********************************");
+        System.out.println("*************************************");
+        System.out.println("*\tWelcome to Claire's Coder Cafe!\t*");
+        System.out.println("*\t\t" + myDate + " " + formattedTime + "\t\t\t*");
+        System.out.println("*\t" + icedMatchaLatteItems + " x " + "Iced Matcha Latte\t\t\t*");
+        System.out.println("*\t" + icedLatteItems + " x " + "Iced Latte\t\t\t\t\t*");
+        System.out.println("*\t" + cappuccinoItems + " x " + "Cappuccino\t\t\t\t\t*");
+        System.out.println("*\t" + hotChocolateItems + " x " + "Hot Chocolate\t\t\t\t*");
+        System.out.println("*\t\t\t\t\t\t\t\t\t*");
+        System.out.print("*\tSubtotal: $");
+        System.out.printf("%.2f", subTotal);
+        System.out.println("\t\t\t\t*");
+        System.out.print("*\tSales Tax: $");
+        System.out.printf("%.2f", tax);
+        System.out.println("\t\t\t\t*");
+        System.out.print("*\tService Fee: $");
+        System.out.printf("%.2f", serviceFee);
+        System.out.println("\t\t\t\t*");
+        System.out.print("*\tCoder cafe Fee: $");
+        System.out.printf("%.2f", cafeFee);
+        System.out.println("\t\t\t*");
+        System.out.println("*\t\t\t\t\t\t\t\t\t*");
+        System.out.print("*\tTotal: $");
+        System.out.printf("%.2f", total);
+        System.out.println("\t\t\t\t\t*");
+        System.out.println("*\t\tThank you, come again!\t\t*");
+        System.out.println("*************************************");
 
 
 
