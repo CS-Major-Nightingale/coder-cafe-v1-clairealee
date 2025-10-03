@@ -5,17 +5,19 @@ import java.time.format.DateTimeFormatter;
 
 public class CoderCafe {
     public static void main(String args[]) {
-        //items
+        //declaring variables
         double icedMatchaLatte = 4.50;
         double icedLatte = 5.30;
         double cappuccino = 3.75;
         double hotChocolate = 4.80;
+
         int icedMatchaLatteItems = 3;
         int icedLatteItems = 2;
         int cappuccinoItems = 4;
         int hotChocolateItems = 2;
-        int items = (icedMatchaLatteItems + icedLatteItems + cappuccinoItems + hotChocolateItems);
 
+        //calculating variables
+        int items = (icedMatchaLatteItems + icedLatteItems + cappuccinoItems + hotChocolateItems);
         double subTotal = (icedMatchaLatte * icedMatchaLatteItems) + (icedLatte * icedLatteItems) + (cappuccino * cappuccinoItems) + (hotChocolate * hotChocolateItems);
         double tax = subTotal * .08875;
         double serviceFee = 1.21;
@@ -28,6 +30,7 @@ public class CoderCafe {
         DateTimeFormatter myFormatter = DateTimeFormatter.ofPattern("HH:mm::ss");
         String formattedTime = myTime.format(myFormatter);
 
+        //printing
         System.out.println("*****************************************");
         System.out.println("*\tWelcome to Claire's Coder Cafe!\t\t*");
         System.out.println("*\t\t " + myDate + " " + formattedTime + " \t\t\t*");
@@ -51,8 +54,5 @@ public class CoderCafe {
         System.out.printf("*\tTotal: \t\t\t\t\t $%.2f\t\t*\n", total);
         System.out.println("*\t\tThank you, come again!\t\t\t*");
         System.out.println("*****************************************");
-
-
-
     }
 }
